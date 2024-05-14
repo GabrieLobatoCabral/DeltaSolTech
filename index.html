@@ -29,12 +29,12 @@
 <body>
   <header id="header">
     <nav class="container">
-      <img src="./assents/imagens/logo deltasoltec.png" alt="logo deltasoltec" class="logo" />
+      <img src="./assents/imagens/logos/logo deltasoltec.png" alt="logo deltasoltec" class="logo" />
       <!-- menu -->
       <div class="menu">
         <ul class="grid">
           <li><a class="title" href="#sobre">Sobre Nós</a></li>
-          <li><a class="title" href="#links">Aplicativos</a></li>
+          <li><a class="title" id="elemento-pai" href="#links">Aplicativos</a></li>
           <li><a class="title" href="#parceiros">Parceiros</a></li>
           <li><a class="title" href="#mensage">Depoimentos</a></li>
           <li><a class="title" href="#contact">Contatos</a></li>
@@ -44,26 +44,40 @@
       <div class="toggle icon-menu"></div>
       <div class="toggle icon-close"></div>
     </nav>
+
+    <div id="elemento-filho">
+      <div class="applist">
+        <a href="" class="app">
+          <img src="./assents/imagens/logos/sed2.jpeg-removebg-preview.png" alt="">
+          <p>SED</p>
+          <h2>Lorem ipsum dolor sit.</h2>
+        </a>
+
+        <a href="" class="app">
+          <img src="./assents/imagens/logos/cem2.jpeg-removebg-preview.png" alt="">
+          <p>CEM</p>
+          <h2>Lorem ipsum dolor sit.</h2>
+        </a>
+      </div>
+    </div>
   </header>
 
   <main>
     <section id="home">
       <div class="capa">
-        <img src="./assents/imagens/logo deltasoltec.png" alt="">
+        <img src="./assents/imagens/logos/logo deltasoltec.png" alt="">
       </div>
     </section>
 
     <section id="sobre">
-      <h1>Sejam bem-vindos ao nosso site!</h1>
+      <h1>Sejam bem-vindos a DELTASOLTEC!</h1>
       <h3>
-        A MELHOR FORMA DE COMPARTILHAR ESSE MOMENTO COM VOCÊS É UNINDO SONHOS.
+        Lorem, ipsum dolor.
       </h3>
-      <img src="./assents/imagens/logo teste.webp" alt="logo deltasoltec" />
+      <img src="./assents/imagens/logos/logo deltasoltec.png" alt="logo deltasoltec" />
       <h3>
-        Olá querido convidado, fizemos essa plataforma para você ficar informado sobre nosso casamento que estamos
-        preparando com muito amor e carinho. <br> <br>
-        Estamos felizes em compartilhar esse passo tão especial em nossa história, e dividir esse momento especial com
-        você é o que mais desejamos.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In a placeat facere, aliquid quia voluptates saepe
+        totam temporibus consequatur modi illo iusto ullam sint, expedita quidem blanditiis ea vitae veniam.
       </h3>
     </section>
 
@@ -71,41 +85,21 @@
     <section id="links">
 
       <a href="https://deltasoltec1.websiteseguro.com/sed" class="card">
-        <div class="card-image"></div>
-        <div class="category"> Illustration </div>
-        <div class="heading"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ipsum tempore animi officia, rerum cum quis. Voluptatibus reprehenderit, id totam voluptatem veniam velit nostrum, sapiente iste exercitationem aliquam eius explicabo.
-          <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+        <div class="card-image" id="card1"></div>
+        <div class="category"> SED </div>
+        <div class="heading"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ipsum tempore animi
+          officia, rerum cum quis. Voluptatibus reprehenderit, id totam voluptatem veniam velit nostrum, sapiente iste
+          exercitationem aliquam eius explicabo.
+          <div class="author"> em <span class="name">14</span> de maio</div>
         </div>
       </a>
 
       <a href="https://deltasoltec1.websiteseguro.com/sed" class="card">
-        <div class="card-image"></div>
-        <div class="category"> Illustration </div>
-        <div class="heading"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ipsum tempore animi officia, rerum cum quis. Voluptatibus reprehenderit, id totam voluptatem veniam velit nostrum, sapiente iste exercitationem aliquam eius explicabo.
-          <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-        </div>
-      </a>
-
-      <a href="https://deltasoltec1.websiteseguro.com/sed" class="card">
-        <div class="card-image"></div>
-        <div class="category"> Illustration </div>
-        <div class="heading"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ipsum tempore animi officia, rerum cum quis. Voluptatibus reprehenderit, id totam voluptatem veniam velit nostrum, sapiente iste exercitationem aliquam eius explicabo.
-          <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-        </div>
-      </a>
-
-      <a href="https://deltasoltec1.websiteseguro.com/sed" class="card">
-        <div class="card-image"></div>
-        <div class="category"> Illustration </div>
-        <div class="heading"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ipsum tempore animi officia, rerum cum quis. Voluptatibus reprehenderit, id totam voluptatem veniam velit nostrum, sapiente iste exercitationem aliquam eius explicabo.
-          <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-        </div>
-      </a>
-
-      <a href="https://deltasoltec1.websiteseguro.com/sed" class="card">
-        <div class="card-image"></div>
-        <div class="category"> Illustration </div>
-        <div class="heading"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ipsum tempore animi officia, rerum cum quis. Voluptatibus reprehenderit, id totam voluptatem veniam velit nostrum, sapiente iste exercitationem aliquam eius explicabo.
+        <div class="card-image" id="card2"></div>
+        <div class="category"> CEM </div>
+        <div class="heading"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ipsum tempore animi
+          officia, rerum cum quis. Voluptatibus reprehenderit, id totam voluptatem veniam velit nostrum, sapiente iste
+          exercitationem aliquam eius explicabo.
           <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
         </div>
       </a>
@@ -113,30 +107,25 @@
     </section>
 
     <section id="parceiros">
-      <div class="lojas">
-        <img src="./assents/imagens/lojas/pix.png" alt="Logo Pix">
-        <img src="./assents/imagens/lojas/pix.png" alt="Logo Pix">
-        <img src="./assents/imagens/lojas/pix.png" alt="Logo Pix">
-        <img src="./assents/imagens/lojas/pix.png" alt="Logo Pix">
+      <div class="logosParc">
+        <img src="./assents/imagens/logos/logo phe telecom.png" alt="Logo phetelecom">
+        <img src="./assents/imagens/logos/logo deltasoltec.png" alt="Logo Pix">
       </div>
     </section>
 
     <section class="section" id="mensage">
       <div class="grade swiper">
         <header>
-          <h2 class="title">Gostaria de dizer algo aos noivos?</h2>
-          <a href="mailto:jamilyedavid@gmail.com?subject=Mensagem para os Noivos&body=Escreva%20uma%20mensagem%20curta%20e%20anexe%20uma%20foto%20para%20os%20noivos%20verem%20quem%20est%C3%A1%20lhes%20desejando%20felicidades.%20%F0%9F%98%8A"
-            class="button" target="_blank"><i></i>Envie sua mensagem</a>
+          <h2 class="title">Depoimentos de nossos clientes.</h2>
         </header>
         <div class="mensage">
-          <h1 class="prime">Seja o primeiro a compartilhar.</h1>
 
-          <!--<section class="section" id="testimonials">
+          <section class="section" id="testimonials">
             <div class="grade">
               <div class="testimonials swiper">
-                <div class="swiper-wrapper">-->
+                <div class="swiper-wrapper">
 
-          <!--<div class="testimonials">
+                  <div class="testimonials">
                     <blockquote>
                       <p>
                         <span>&ldquo;</span>
@@ -144,17 +133,13 @@
                         rerum fugit dolore laudantium vitae distinctio minima
                         mollitia, inventore, neque quasi ex ipsa!
                       </p>
-                      <cite
-                        ><img
-                          src="./assents/imagens/profile/0.png"
-                          alt="Foto de "
-                        />
+                      <cite><img src="./assents/imagens/profile/0.png" alt="Foto de " />
                         Anonimo
                       </cite>
                     </blockquote>
-                  </div>-->
+                  </div>
 
-          <!--<div class="testimonials">
+                  <div class="testimonials">
                     <blockquote>
                       <p>
                         <span>&ldquo;</span>
@@ -162,17 +147,13 @@
                         rerum fugit dolore laudantium vitae distinctio minima
                         mollitia, inventore, neque quasi ex ipsa!
                       </p>
-                      <cite
-                        ><img
-                          src="./assents/imagens/profile/0.png"
-                          alt="Foto de "
-                        />
+                      <cite><img src="./assents/imagens/profile/0.png" alt="Foto de " />
                         Anonimo
                       </cite>
                     </blockquote>
-                  </div>-->
+                  </div>
 
-          <!--<div class="testimonials">
+                  <div class="testimonials">
                     <blockquote>
                       <p>
                         <span>&ldquo;</span>
@@ -180,17 +161,13 @@
                         rerum fugit dolore laudantium vitae distinctio minima
                         mollitia, inventore, neque quasi ex ipsa!
                       </p>
-                      <cite
-                        ><img
-                          src="./assents/imagens/profile/0.png"
-                          alt="Foto de "
-                        />
+                      <cite><img src="./assents/imagens/profile/0.png" alt="Foto de " />
                         Anonimo
                       </cite>
                     </blockquote>
-                  </div>-->
+                  </div>
 
-          <!--<div class="testimonials">
+                  <div class="testimonials">
                     <blockquote>
                       <p>
                         <span>&ldquo;</span>
@@ -198,20 +175,16 @@
                         rerum fugit dolore laudantium vitae distinctio minima
                         mollitia, inventore, neque quasi ex ipsa!
                       </p>
-                      <cite
-                        ><img
-                          src="./assents/imagens/profile/0.png"
-                          alt="Foto de "
-                        />
+                      <cite><img src="./assents/imagens/profile/0.png" alt="Foto de " />
                         Anonimo
                       </cite>
                     </blockquote>
-                  </div>-->
+                  </div>
 
-        </div>
-      </div>
-      </div>
-    </section>
+                </div>
+              </div>
+            </div>
+          </section>
     </section>
 
     <section class="section" id="contact">
@@ -222,17 +195,13 @@
             Entre em contato com a gente, queremos tirar suas dúvidas,
             ouvir suas críticas e sugestões.
           </p>
-          <a
-            href="https://api.whatsapp.com/send?phone=+5511998456754=Oi! Gostaria de agendar um horário"
-            class="button"
-            target="_blank"
-            ><i class="icon-whatsapp"></i>Entrar em contato</a
-          >
+          <a href="https://api.whatsapp.com/send?phone=+559191429461=Oi! Gostaria de tirar algumas duvidas." class="button"
+            target="_blank"><i class="icon-whatsapp"></i>Entrar em contato</a>
         </div>
 
         <div class="link">
           <ul class="grid">
-            <li><i class="icon-phone"></i> 11 99845-6754</li>
+            <li><i class="icon-phone"></i> 91 99142-9461</li>
             <li><i class="icon-map-pin"></i> R. Amauri Souza, 346</li>
             <li><i class="icon-mail"></i> contato@beautysalon.com</li>
           </ul>

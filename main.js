@@ -31,6 +31,27 @@ function changeHeaderWhenScroll() {
   }
 }
 
+document.getElementById("elemento-pai").addEventListener("mouseover", function() {
+  // Mostra o elemento filho quando o mouse passa sobre o elemento pai
+  document.getElementById("elemento-filho").style.display = "block";
+});
+
+document.getElementById("elemento-filho").addEventListener("mouseover", function() {
+  // Mostra o elemento filho quando o mouse passa sobre o elemento pai
+  document.getElementById("elemento-filho").style.display = "block";
+});
+
+document.getElementById("elemento-pai").addEventListener("mouseout", function() {
+  // Oculta o elemento filho quando o mouse deixa o elemento pai
+  document.getElementById("elemento-filho").style.display = "none";
+});
+
+
+document.getElementById("elemento-filho").addEventListener("mouseout", function() {
+  // Oculta o elemento filho quando o mouse deixa o elemento pai
+  document.getElementById("elemento-filho").style.display = "none";
+});
+
 
 /* Botão voltar para o topo */
 const backToTopButton = document.querySelector('.back-to-top')

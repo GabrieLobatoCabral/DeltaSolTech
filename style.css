@@ -80,7 +80,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 2;
   background-color: var(--body-color);
   width: 100%;
 }
@@ -194,6 +194,54 @@ nav.show div.icon-close {
   top: 1.5rem;
 }
 
+#elemento-filho {
+  display: none;
+
+  margin-top: 2.7rem;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--body-color);
+  width: 100%;
+}
+
+#elemento-filho .show{
+  display: block;
+}
+
+#elemento-filho .applist {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 8rem;
+  gap: 1.5rem;
+
+  font-family: var(--prime-font);
+}
+
+#elemento-filho .app{
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.app:hover {
+  transform: scale(0.98);
+}
+
+#elemento-filho .app img {
+  max-width: 10rem;
+}
+
+#elemento-filho .app p {
+  color: var(--title-color);
+}
+
+#elemento-filho .app h2 {
+  color: var(--text-color);
+}
+
 #home {
   background: url(./assents/imagens/background\ teste.webp);
   height: 550px;
@@ -291,20 +339,29 @@ nav.show div.icon-close {
   transform: scale(0.98);
 }
 
-
 .card-image {
-  background: url(./assents/imagens/background\ teste.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-
   width: 100%;
   height: 190px;
   border-radius: 6px;
 }
 
+#card1 {
+  background: url(./assents/imagens/logos/sed2.jpeg-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#card2 {
+  background: url(./assents/imagens/logos/cem2.jpeg-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .category {
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: var(--title-color);
   padding: 10px 7px 0;
@@ -390,24 +447,23 @@ nav.show div.icon-close {
   padding: 3rem 15rem;
 }
 
-#parceiros .lojas {
+#parceiros .logosParc {
   display: flex;
   flex-wrap: wrap;
 
   align-items: center;
   justify-content: center;
 
-  gap: 1rem;
+  gap: 5rem;
 }
 
-#parceiros .lojas img {
-  max-width: 10%;
-  border-radius: 50%;
+#parceiros .logosParc img {
+  max-width: 7rem;
   padding: 2rem 0;
   transition: transform 0.3s;
 }
 
-#parceiros .lojas img:hover {
+#parceiros .logosParc img:hover {
   transform: scale(1.1);
 }
 
@@ -430,9 +486,6 @@ li {
     padding: 2rem 8rem;
   }
 
-  #parceiros .lojas img {
-    max-width: 15%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -440,9 +493,6 @@ li {
     padding: 2rem 4rem;
   }
 
-  #parceiros .lojas img {
-    max-width: 30%;
-  }
 }
 
 @media (max-width: 425px) {
@@ -454,9 +504,6 @@ li {
     font-size: 1.3rem;
   }
 
-  #parceiros .lojas img {
-    max-width: 45%;
-  }
 }
 
 #mensage {
@@ -466,26 +513,10 @@ li {
 
 #mensage h2 {
   font-size: 1.5rem;
-  padding-bottom: 3rem;
-}
-
-#mensage .button i {
-  font-size: 1.5rem;
-  margin-right: 0.625rem;
 }
 
 #mensage header {
   text-align: center;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  margin-bottom: 0;
-}
-
-#mensage .prime {
-  text-align: center;
-  padding-top: 5rem;
-  color: gray;
-  opacity: 60%;
 }
 
 #mensage blockquote {
@@ -602,6 +633,8 @@ li {
 
 #contact {
   padding: 5rem 0;
+
+  background-color: var(--base-color-light);
 }
 
 #contact .grid {
@@ -709,7 +742,7 @@ footer .social a:hover {
   }
 
   .section {
-    padding: 10rem 0;
+    padding: 3.5rem 0;
   }
 
   /* navigation */
